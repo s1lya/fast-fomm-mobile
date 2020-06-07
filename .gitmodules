@@ -4,3 +4,6 @@
 [submodule "gan-compression"]
 	path = gan-compression
 	url = https://github.com/Tismoney/gan-compression/
+[submodule "onnx-coreml"]
+	path = onnx-coreml
+	url = https://github.com/Arxtage/onnx-coreml
