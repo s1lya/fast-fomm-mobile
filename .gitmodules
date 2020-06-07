@@ -1,0 +1,6 @@
+[submodule "first-order-model"]
+	path = first-order-model
+	url = https://github.com/Silya-1/first-order-model
+[submodule "gan-compression"]
+	path = gan-compression
+	url = https://github.com/Tismoney/gan-compression/
