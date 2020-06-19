@@ -20,7 +20,7 @@ Please see a [video](https://www.youtube.com/watch?v=2hjGJ2D_66Q) of project pre
 
 ### First Order Motion Model 
 
-This is a fork of the original [FOMM model](https://github.com/AliaksandrSiarohin/first-order-model) we added a script [generation_syntetic_dataset_v3_recognition.py](generation_syntetic_dataset_v3_recognition.py) for creation synthetic dataset that consists of source image driving image and a predicted one, which is a result of transformation of the source image in a position of driving one. The example of FOMM inference presented bellow. Here is a [link](https://drive.google.com/drive/u/1/folders/1gZce8unaCcQBKu9OFKOiPRAo_itAPEmH) for the created dataset.
+This is a fork of the original [FOMM model](https://github.com/AliaksandrSiarohin/first-order-model) we added a script [generation_syntetic_dataset_v3_recognition.py](https://github.com/Silya-1/first-order-model/blob/093ddb5b55c748749c41bcfb90bf094740071b97/generation_syntetic_dataset_v3_recognition.py) for creation synthetic dataset that consists of source image driving image and a predicted one, which is a result of transformation of the source image in a position of driving one. The example of FOMM inference presented bellow. Here is a [link](https://drive.google.com/drive/u/1/folders/1gZce8unaCcQBKu9OFKOiPRAo_itAPEmH) for the created dataset.
 
 <p align="center">
 <img src='pics/FOMM_triplet.png' align="center" width=750> 
