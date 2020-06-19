@@ -8,7 +8,7 @@ The purpose of the project was to compress First-Order Motion Model for conditio
 
 ## Video
 
-Please see a [svideo](https://www.youtube.com/watch?v=2hjGJ2D_66Q) of project presentation for more details.
+Please see a [video](https://www.youtube.com/watch?v=2hjGJ2D_66Q) of project presentation for more details.
 
 ## Prerequisites
 
