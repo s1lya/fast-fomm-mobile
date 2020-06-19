@@ -20,7 +20,7 @@ Please see a [video](https://www.youtube.com/watch?v=2hjGJ2D_66Q) of project pre
 
 ### First Order Motion Model 
 
-This is a fork of the original [FOMM model](https://github.com/AliaksandrSiarohin/first-order-model) we added a script [generation_syntetic_dataset_v3_recognition.py](https://github.com/Silya-1/first-order-model/blob/093ddb5b55c748749c41bcfb90bf094740071b97/generation_syntetic_dataset_v3_recognition.py) for creation synthetic dataset that consists of source image driving image and a predicted one, which is a result of transformation of the source image in a position of driving one. The example of FOMM inference presented bellow. Here is a [link](https://drive.google.com/drive/u/1/folders/1gZce8unaCcQBKu9OFKOiPRAo_itAPEmH) for the created dataset.
+This is a fork of the original [FOMM model](https://github.com/AliaksandrSiarohin/first-order-model). We added a script [generation_syntetic_dataset_v3_recognition.py](https://github.com/Silya-1/first-order-model/blob/093ddb5b55c748749c41bcfb90bf094740071b97/generation_syntetic_dataset_v3_recognition.py) for synthetic dataset creation, it consists of triplets: (source image, driving image, FOMM-predicted image). FOMM-predicted image is a result of transformation of the source image in a position of driving one with FOMM. The example of such a triplet is presented below. Here is a [link](https://drive.google.com/drive/u/1/folders/1gZce8unaCcQBKu9OFKOiPRAo_itAPEmH) to the created dataset.
 
 <p align="center">
 <img src='pics/FOMM_triplet.png' align="center" width=750> 
@@ -28,17 +28,23 @@ This is a fork of the original [FOMM model](https://github.com/AliaksandrSiarohi
 
 ### Gan compression
 
-The module is also a fork of the original [GAN Compression](https://github.com/mit-han-lab/gan-compression) model. But here we added some important improvenents. The first one is Dense Motion block. The second is adding [CoordConv block](https://arxiv.org/abs/1807.03247). 
+The module is also a fork of the original [GAN Compression](https://github.com/mit-han-lab/gan-compression) model. Here we added several important improvenents:
+
+1. Triplet dataloader for pix2pix model;
+2. Dense Motion block inside of the pix2pix;
+3. [CoordConv](https://arxiv.org/abs/1807.03247) block.
+
+Example of the Dense Motion block prediction for random images during training:
 
 <p align="center">
-<img src='pics/motion.png' align="center" width=750> 
+<img src='pics/motion.png' align="center" width=550> 
 </p>
 
-Also the module contains [the demo notebook](https://github.com/Tismoney/gan-compression/blob/master/2pix2pix.ipynb) to launch our model.
+See a [demo notebook](https://github.com/Tismoney/gan-compression/blob/master/2pix2pix.ipynb) to launch our model.
 
 ### ONNX to Core ML Converter
 
-This submodule is fork of [ONNX to Core ML Converter](https://github.com/onnx/onnx-coreml). The module aimed at converting PyTorch modules to Apple Core ML format. It's a special format for inference models on Apple devices. There is no straightforward solution to convert PyTorch models directly to CORE Ml, the intermediate conversion to ONNX format is used in this module.
+This submodule is a fork of [ONNX to Core ML Converter](https://github.com/onnx/onnx-coreml). The module aimed at converting PyTorch modules to Apple CoreML format. It's a special format for model inference on Apple devices. There is no straightforward solution to convert PyTorch models directly to CoreML, therefore an intermediate conversion to ONNX format is used.
 
 <p align="center">
 <img src='pics/coreml.png' align="center" width=750> 
