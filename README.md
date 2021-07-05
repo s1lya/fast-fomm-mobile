@@ -1,4 +1,4 @@
-# Fast-fomm-mobile
+# Fast-FOMM-Mobile
 
 The code was written by [Arman Tsaturyan](https://github.com/Arxtage), [Nikita Mokrov](https://github.com/Tismoney), [Ilya Selnitskiy](https://github.com/Silya-1) and [Ilya Zakharkin](https://github.com/izaharkin).
 
@@ -26,7 +26,7 @@ This is a fork of the original [FOMM model](https://github.com/AliaksandrSiarohi
 <img src='pics/FOMM_triplet.png' align="center" width=750> 
 </p>
 
-### Gan compression
+### Gan Compression
 
 The module is also a fork of the original [GAN Compression](https://github.com/mit-han-lab/gan-compression) model. Here we added several important improvenents:
 
